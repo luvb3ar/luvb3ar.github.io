@@ -19,12 +19,43 @@
 <p>
 	Project B13 is now underway, not too sure what it'll look like, but we'll find out soon enough.
 </p>
-<iframe width="480" height="360" src="//www.youtube.com/embed/a1Y73sPHKxw" frameborder="0" allowfullscreen></iframe>
+<iframe id = "video" width="560" height="315" src="//www.youtube.com/embed/FIPJhylsO3Y" frameborder="0" allowfullscreen style = "margin-bottom: 5px;"></iframe>
 <div style = "height: 5%; background: #c9c9c9;">
 </div>
 <div style = "height: 5%; background: #f0f0f0;">
 </div>
 <div style = "height: 5%; background: #c9c9c9;">
 </div>
+
+<script>
+var vid = document.getElementById("video");
+window.onload = function() {
+	var width = document.body.clientWidth;
+	
+	if(width < 380) {
+		vid.style.width = "200";
+		vid.style.height = "150";
+	} else if(width < 700) {
+		vid.style.width = "300";
+		vid.style.height = "225";
+	}
+}
+
+window.onresize = function(event) {
+	var width = document.body.clientWidth;
+	
+	if(width < 380) {
+		vid.style.width = "200";
+		vid.style.height = "150";
+	} else if(width < 700) {
+		vid.style.width = "300";
+		vid.style.height = "225";
+	} else {
+		vid.style.width = "560";
+		vid.style.height = "315";
+	}
+}
+</script>
+
 </body>
 </html>
