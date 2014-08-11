@@ -22,16 +22,18 @@
 		</script>
 	</head>
 	<body>
-		<div style = "height: 10%; background: #c9c9c9;"></div>
-		<h1>Sean Michael Amato</h1>
+		<div id = "box1" style = "background: #4081a0; box-shadow: 1px 1px 5px #000000; width: 99%; padding-bottom: 20px; margin-bottom: 1px;">
+		<h1 style="margin: 51px;">Sean Michael Amato</h1>
+		</div>
+		<div id = "box2" style = "background: #32647d; box-shadow: 1px 1px 5px #000000; width: 99%;">
 		<h4 class = "descrip">Doing stuff</h4>
 		<p>Project B13 is now underway, not too sure what it'll look like, but we'll find out soon enough.</p>
 		<iframe id = "video" width="560" height="315" src="//www.youtube.com/embed/FIPJhylsO3Y" frameborder="0" allowfullscreen style = "margin-bottom: 5px;"></iframe>
-		<div style = "height: 5%; background: #c9c9c9;"></div>
-		<div style = "height: 5%; background: #f0f0f0;"></div>
-		<div style = "height: 5%; background: #c9c9c9;"></div>
+		</div>
+		<div id = "box3" style = "height: 10px; background: #4061a0; box-shadow: 1px 1px 5px #000000; width: 99%; margin-top: 1px;"></div>
 		<script>
 			var vid = document.getElementById("video");
+			
 			//Initial adjustment
 			window.onload = function() {
 				var width = document.body.clientWidth;
